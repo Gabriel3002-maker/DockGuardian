@@ -25,4 +25,24 @@ Además, permite consultar el estado actual de los contenedores y visualizar sus
 - Refresco automático de estado (cada 10 segundos). 
 - Notificación sonora (en UI) cuando se detectan fallos.
 
+## Para levantar el proyecto con Docker, ejecuta el siguiente comando en la raíz del proyecto:
+
+```bash
+docker-compose up -d
+```
+
+- Construirá la imagen del backend (FastAPI).
+
+- Iniciará la aplicación de interfaz (Streamlit).
+
+- Levantará ambos servicios en segundo plano (-d).
+
+- Una vez en ejecución, podrás acceder a:
+
+    📊 Interfaz UI (Streamlit): http://localhost:8501
+
+    ⚙️ Documentación del API (FastAPI): http://localhost:8020/docs
+
+
+
 
